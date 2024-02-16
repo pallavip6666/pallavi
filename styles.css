@@ -3,6 +3,10 @@
 html{
     background-color:pink;
 }
+.h2{
+  font-style: italic;
+  align-content:center;
+}
 .description,.subtitle,.title{
   font-style: italic;
   font-size: medium;
