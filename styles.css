@@ -3,6 +3,12 @@
 html{
     background-color:pink;
 }
+<<<<<<< HEAD
+.logo{
+	width:50px;
+	height:35px;
+	position:left;
+=======
 .h2{
   font-style: italic;
   align-content:center;
@@ -10,19 +16,90 @@ html{
 .description,.subtitle,.title{
   font-style: italic;
   font-size: medium;
+>>>>>>> bc67d8e48b89141a1f3e30b5c396941efc0d4813
 }
+.content{
+	font-size:25px;
+}
+
+
+
+
+}
+.content {
+
+
+border: 2px dashed rgb(222, 235, 222);
+ width: 100%;
+  height: 100%;
+}
+
+
+.content_description {
+ 
+  
+  width:45%;
+  height:100px;
+  float:left;
+  padding: 15px;
+  font-size:25px;
+  .buttons{
+	  color:black;
+  }
+}
+
+
+ .content_gif{
+
+	height:250px;
+	float: right;
+	margin-left:50%; 
+	padding-right:20px;
+	padding-left:20px;
+	width:400px;
+}
+
+
+
+
+/* scrolling to top*/
+.top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgb(128, 128, 255) url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+  box-shadow: 0 0.25rem 0.5rem 0 gray;
+  opacity: 0.7;
+}
+.top:hover {
+  opacity: 0.8;
+}
+.top:focus {
+  opacity: 0.9;
+}
+.top:active {
+  opacity: 1;
+}
+
+
 
 .container {
 display: flex;
 flex-wrap: wrap;
+justify-content:center;
 width: 100%;
   height: 60vh;
+
 }
 .card{
   background:lightpink;
   width: 240px;
   height: 440px;
   margin: 10px;
+  
   
 }
 .card-image{ 
@@ -59,32 +136,30 @@ transition: all 1s ease;
 
 .dark{
   background-color:rgb(151, 37, 151);
-  width: 100%;
-  height: 95vh;
-  p, h1,h2,h3,a,address {color:white;}
+ width:100%;
+ height:100%;
+  p, h1,h2,h3,a,address {color:white;};
   
 }
 .light{
   background-color: pink;
-  width: 100%;
-  height: 100vh;
+ width:100%;
+ height:100%;
   
 }
-
+/* content inside aboutme section*/
 .content {
 
-color:blue;
+color:white;
 border: 2px dashed rgb(222, 235, 222);
-width:auto;
-
-
+ width: 100%;
+  height: 96vh;
 }
 
-
+/*projects gallery section*/
 .container{
   margin: 100px auto;
   width:auto;
-
 }
 div.gallery {
   margin: 5px;
@@ -99,13 +174,15 @@ div.gallery:hover {
 
 div.gallery img {
   width: 250px;
-  height: 250px;
+  height: 460px;
 }
 
 
 .action__btns {
   display: flex;
   gap: 1rem;
+  margin:5px;
+ 
 }
 
 .action__btns button {
@@ -123,6 +200,7 @@ div.gallery img {
 .buttons {
   color: var(--primary-color);
   
+  
 }
 
 .buttons:hover {
@@ -139,17 +217,11 @@ img {
   margin:auto;
 }
 
-.image {
-  display: grid;
-  place-items: center;
-}
 
-.image img {
-  width: min(20rem, 90%);
-  border-radius: 100%;
-}
 
-  .logo img {
+
+
+  .logo img{
     width: 25px;
     height: 25px;    
   }
@@ -183,8 +255,8 @@ img {
 
   .maps
   {
-    width:40px;
-    height:25px;
+    width:800px;
+    height:470px;
   }
   .projectbody{
     width: 100%;
@@ -200,10 +272,11 @@ img {
      height: 480px;
      margin: 5px;
      border:6px double black;
+	 
 }  
 
 
-
+/*contact me form*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
@@ -215,6 +288,7 @@ img {
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  
 }
 .formcontainer .formcontent {
   display: flex;
